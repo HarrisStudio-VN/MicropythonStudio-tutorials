@@ -1,55 +1,60 @@
 {
-  "type": "tutorial-registry",
-  "version": "1.0.0",
   "packages": [
     {
       "id": "esp32-digital-basic",
-      "name": "ESP32 – Digital IO Basic",
+      "name": "Digital IO",
+      "description": "Blink, Button, Pull-up, etc.",
       "board": "esp32",
-      "category": "digital",
-      "level": "beginner",
-      "description": "Basic digital input/output for ESP32",
       "files": [
         "esp32/digital/blink.py",
-        "esp32/digital/input_pullup.py",
-        "esp32/digital/README.md"
+        "esp32/digital/input_pullup.py"
       ]
     },
     {
       "id": "esp32-analog-basic",
-      "name": "ESP32 – Analog & PWM",
+      "name": "Analog & PWM",
+      "description": "ADC Reading and LED Fading",
       "board": "esp32",
-      "category": "analog",
-      "level": "beginner",
-      "description": "ADC and PWM examples for ESP32",
       "files": [
         "esp32/analog/adc_read.py",
-        "esp32/pwm/led_fade.py",
-        "esp32/analog/README.md"
+        "esp32/pwm/led_fade.py"
       ]
     },
     {
-      "id": "esp32-wifi-basic",
-      "name": "ESP32 – WiFi & Network",
+      "id": "esp32-sensors",
+      "name": "Sensors",
+      "description": "DHT11, Temperature, etc.",
       "board": "esp32",
-      "category": "wifi",
-      "level": "beginner",
-      "description": "Connecting to WiFi on ESP32",
       "files": [
-        "esp32/wifi/connect.py",
-        "esp32/wifi/README.md"
+        "esp32/sensors/dht11.py"
+      ]
+    },
+    {
+      "id": "esp32-display",
+      "name": "Display & UI",
+      "description": "I2C LCD and OLED",
+      "board": "esp32",
+      "files": [
+        "esp32/display/i2c_lcd.py"
       ]
     },
     {
       "id": "rp2040-digital-basic",
-      "name": "RP2040 – Digital IO",
+      "name": "Digital IO",
+      "description": "Blink for Pico",
       "board": "rp2040",
-      "category": "digital",
-      "level": "beginner",
-      "description": "Basic digital IO for Raspberry Pi Pico",
       "files": [
-        "rp2040/digital/blink.py",
-        "rp2040/digital/README.md"
+        "rp2040/digital/blink.py"
+      ]
+    },
+    {
+      "id": "rp2040-advanced",
+      "name": "Advanced Features",
+      "description": "PIO and Dual-Core",
+      "board": "rp2040",
+      "files": [
+        "rp2040/pio/pio_blink.py",
+        "rp2040/multicore/dual_core.py"
       ]
     }
   ]
