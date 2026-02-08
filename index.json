@@ -1,60 +1,67 @@
 {
   "packages": [
     {
-      "id": "esp32-digital-basic",
-      "name": "Digital IO",
-      "description": "Blink, Button, Pull-up, etc.",
+      "id": "esp32-beginner",
+      "name": "Beginner (Core)",
+      "description": "Cấu trúc cơ bản cho ESP32: Blink, Button, ADC, PWM, UART, I2C Scan.",
       "board": "esp32",
       "files": [
         "esp32/digital/blink.py",
-        "esp32/digital/input_pullup.py"
-      ]
-    },
-    {
-      "id": "esp32-analog-basic",
-      "name": "Analog & PWM",
-      "description": "ADC Reading and LED Fading",
-      "board": "esp32",
-      "files": [
+        "esp32/digital/input_pullup.py",
         "esp32/analog/adc_read.py",
-        "esp32/pwm/led_fade.py"
+        "esp32/pwm/led_fade.py",
+        "esp32/uart/serial_debug.py",
+        "esp32/i2c/scan.py"
       ]
     },
     {
-      "id": "esp32-sensors",
-      "name": "Sensors",
-      "description": "DHT11, Temperature, etc.",
+      "id": "esp32-signature",
+      "name": "Signature (ESP32-Only)",
+      "description": "Tính năng đặc trưng: WiFi, HTTP, Servo, Touch, Interrupts.",
       "board": "esp32",
       "files": [
-        "esp32/sensors/dht11.py"
+        "esp32/wifi/station.py",
+        "esp32/wifi/http_get.py",
+        "esp32/pwm/servo.py",
+        "esp32/touch/touch_basic.py",
+        "esp32/system/interrupts.py"
       ]
     },
     {
-      "id": "esp32-display",
-      "name": "Display & UI",
-      "description": "I2C LCD and OLED",
+      "id": "esp32-extra",
+      "name": "Extra Tutorials",
+      "description": "Các bài hướng dẫn bổ sung cho cảm biến và hiển thị.",
       "board": "esp32",
       "files": [
+        "esp32/sensors/dht11.py",
         "esp32/display/i2c_lcd.py"
       ]
     },
     {
-      "id": "rp2040-digital-basic",
-      "name": "Digital IO",
-      "description": "Blink for Pico",
+      "id": "rp2040-beginner",
+      "name": "Beginner (Core)",
+      "description": "Cấu trúc cơ bản cho RP2040 (Pico): Blink, Button, ADC, PWM, UART, I2C.",
       "board": "rp2040",
       "files": [
-        "rp2040/digital/blink.py"
+        "rp2040/digital/blink.py",
+        "rp2040/digital/button.py",
+        "rp2040/analog/adc_read.py",
+        "rp2040/pwm/led_fade.py",
+        "rp2040/uart/serial_debug.py",
+        "rp2040/i2c/scan.py"
       ]
     },
     {
-      "id": "rp2040-advanced",
-      "name": "Advanced Features",
-      "description": "PIO and Dual-Core",
+      "id": "rp2040-signature",
+      "name": "Signature (RP2040-Only)",
+      "description": "Tính năng cao cấp của RP2040: PIO, Dual-Core, Timing, Fast ADC.",
       "board": "rp2040",
       "files": [
+        "rp2040/pwm/servo.py",
         "rp2040/pio/pio_blink.py",
-        "rp2040/multicore/dual_core.py"
+        "rp2040/multicore/dual_core.py",
+        "rp2040/system/timing.py",
+        "rp2040/analog/adc_dma.py"
       ]
     }
   ]

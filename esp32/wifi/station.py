@@ -1,0 +1,17 @@
+import network
+import time
+
+def connect_wifi(ssid, password):
+    wlan = network.WLAN(network.STA_IF)
+    wlan.active(True)
+    if not wlan.isconnected():
+        print('Connecting to WiFi...')
+        wlan.connect(ssid, password)
+        while not wlan.isconnected():
+            print(".", end="")
+            time.sleep(1)
+    print('\nConnected! Network config:', wlan.ifconfig())
+
+# Thay đổi SSID và Password của bạn
+# connect_wifi('Your_SSID', 'Your_Password')
+print("WiFi Tutorial Loaded. Call connect_wifi(ssid, password) to test.")
