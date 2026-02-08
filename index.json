@@ -1,0 +1,56 @@
+{
+  "type": "tutorial-registry",
+  "version": "1.0.0",
+  "packages": [
+    {
+      "id": "esp32-digital-basic",
+      "name": "ESP32 – Digital IO Basic",
+      "board": "esp32",
+      "category": "digital",
+      "level": "beginner",
+      "description": "Basic digital input/output for ESP32",
+      "files": [
+        "esp32/digital/blink.py",
+        "esp32/digital/input_pullup.py",
+        "esp32/digital/README.md"
+      ]
+    },
+    {
+      "id": "esp32-analog-basic",
+      "name": "ESP32 – Analog & PWM",
+      "board": "esp32",
+      "category": "analog",
+      "level": "beginner",
+      "description": "ADC and PWM examples for ESP32",
+      "files": [
+        "esp32/analog/adc_read.py",
+        "esp32/pwm/led_fade.py",
+        "esp32/analog/README.md"
+      ]
+    },
+    {
+      "id": "esp32-wifi-basic",
+      "name": "ESP32 – WiFi & Network",
+      "board": "esp32",
+      "category": "wifi",
+      "level": "beginner",
+      "description": "Connecting to WiFi on ESP32",
+      "files": [
+        "esp32/wifi/connect.py",
+        "esp32/wifi/README.md"
+      ]
+    },
+    {
+      "id": "rp2040-digital-basic",
+      "name": "RP2040 – Digital IO",
+      "board": "rp2040",
+      "category": "digital",
+      "level": "beginner",
+      "description": "Basic digital IO for Raspberry Pi Pico",
+      "files": [
+        "rp2040/digital/blink.py",
+        "rp2040/digital/README.md"
+      ]
+    }
+  ]
+}
