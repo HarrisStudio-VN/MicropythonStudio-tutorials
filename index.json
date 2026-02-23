@@ -68,7 +68,7 @@
       "id": "micropython-asyncio",
       "name": "Asyncio (Multiple Tasks)",
       "description": "Lập trình bất đồng bộ: Task, LED Blink, Button, Event, Queue, Timeout.",
-      "board": "any",
+      "board": "asyncio",
       "files": [
         "asyncio/01_hello_world.py",
         "asyncio/02_multiple_tasks.py",
