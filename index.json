@@ -79,6 +79,16 @@
         "asyncio/07_timeout_handling.py",
         "asyncio/08_task_management.py"
       ]
+    },
+    {
+      "id": "esp32-gamepad",
+      "name": "MicroPython Gamepad",
+      "description": "Điều khiển thiết bị qua Bluetooth BLE sử dụng Dashboard Gamepad.",
+      "board": "esp32",
+      "files": [
+        "esp32/bluetooth/ble_simple_peripheral.py",
+        "esp32/bluetooth/gamepad_demo.py"
+      ]
     }
   ]
 }
