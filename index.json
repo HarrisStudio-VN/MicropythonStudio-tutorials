@@ -63,6 +63,22 @@
         "rp2040/system/timing.py",
         "rp2040/analog/adc_dma.py"
       ]
+    },
+    {
+      "id": "micropython-asyncio",
+      "name": "Asyncio (Multiple Tasks)",
+      "description": "Lập trình bất đồng bộ: Task, LED Blink, Button, Event, Queue, Timeout.",
+      "board": "any",
+      "files": [
+        "asyncio/01_hello_world.py",
+        "asyncio/02_multiple_tasks.py",
+        "asyncio/03_led_blink_hardware.py",
+        "asyncio/04_button_handling.py",
+        "asyncio/05_event_sync.py",
+        "asyncio/06_queue_producer_consumer.py",
+        "asyncio/07_timeout_handling.py",
+        "asyncio/08_task_management.py"
+      ]
     }
   ]
 }
